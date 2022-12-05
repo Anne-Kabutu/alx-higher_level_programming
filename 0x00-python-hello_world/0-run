@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod u + x $PYFILE
+cat $PYFILE | python3
