@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 for number in range(0, 100):
-    if number == 99:
-        print("{}".format(number))
+    if number < 10:
+        string = f"0{number:d}"
     else:
-        print("{:02}".format(number), end=", ")
+        string = f"{number:d}"
+    if number == 99:
+        print("{}".format(string))
+    else:
+        print("{}, ".format(string), end="")
